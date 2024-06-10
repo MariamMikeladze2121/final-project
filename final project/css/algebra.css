@@ -1,0 +1,31 @@
+.divclass {
+  width: 600px;
+  background-color: #989ca4;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+.divclass h3 {
+  color: white;
+  margin-top: -150px;
+  font-family: "Noto Serif Georgian", serif;
+  margin-left: 100px;
+}
+.divclass .imgclass {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+.divclass p {
+  color: white;
+  display: block !important;
+  width: 400px;
+}
+.divclass div {
+  margin-top: 100px;
+}
+
+.aclass {
+  text-decoration: none;
+}/*# sourceMappingURL=algebra.css.map */
