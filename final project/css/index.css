@@ -1,1 +1,128 @@
-/*# sourceMappingURL=index.css.map */
+#section1 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+}
+#section1 #divid {
+  font-size: 48px;
+  font-weight: 1000;
+  color: #333e79;
+  width: 700px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-left: 140px;
+}
+#section1 p {
+  width: 630px;
+  margin-left: 140px;
+  margin-top: 30px;
+  color: rgb(143, 146, 166);
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+#section1 .container {
+  margin-top: 30px;
+  margin-left: 130px;
+}
+#section1 img {
+  width: 650px;
+  height: 600px;
+  margin-top: -80px;
+  margin-left: -50px;
+}
+
+#buttonid {
+  background-color: #61aabe;
+  color: white !important;
+}
+
+#buttonid1 {
+  background-color: white;
+  color: #61aabe;
+  border: 2px solid #61aabe;
+}
+
+.button {
+  font-family: "Noto Sans Georgian", sans-serif;
+  border: none;
+  color: #61aabe;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+  transition: background-color 0.3s;
+}
+
+#buttonid:hover {
+  background-color: rgb(77, 105, 181);
+  color: white;
+  border: rgb(77, 105, 181);
+}
+
+#buttonid1:hover {
+  color: white;
+  background-color: #61aabe;
+}
+
+#section2 {
+  margin-bottom: 200px;
+}
+#section2 .divclass {
+  display: flex;
+}
+#section2 #divid1 {
+  width: 200px;
+  color: white;
+  background-color: #61aabe;
+  height: 30px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  border-radius: 14px;
+  margin-left: 600px;
+  padding-left: 15px;
+  padding-top: 2px;
+}
+#section2 #divid2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #333e79;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-left: 370px;
+  margin-top: 20px;
+}
+#section2 #maindiv {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+#section2 #maindiv img {
+  width: 380px;
+  height: 250px;
+  border-radius: 10px;
+  position: relative;
+}
+#section2 #maindiv #divid3 {
+  position: absolute;
+  background-color: white !important;
+  width: 340px;
+  height: 150px;
+  margin-top: -20px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+#section2 #maindiv #divid3 h4 {
+  font-size: large;
+  color: #333e79;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: 600;
+  margin-left: 100px;
+}
+#section2 #maindiv #divid3 p {
+  margin-top: 20px;
+  color: rgb(143, 146, 166);
+  width: 330px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  padding-left: 5px;
+}/*# sourceMappingURL=index.css.map */

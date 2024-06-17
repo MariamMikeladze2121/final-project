@@ -3,85 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Mastery</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&family=Noto+Serif+Georgian:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">მთავარი</a>
-            <a href="about.html">ჩვენს  შესახებ</a>
-            <a href="services.html">სერვისები</a>
-            <a href="news.html">სიახლე</a>
-            <a href="contact.html">კონტაქტი</a>
-        </nav>
+   
+  <nav>
+    <a href="#" class="active" >მთავარი</a>
+    <a href="#">სერვისები</a>
+    <a href="#">სიახლეები</a>
+    <a href="#">ჩვენს შესახებ</a>
+    <a href="#">კონტაქტი</a>
+  </nav>
+  <img src="images/image (1).png">
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search..." onkeyup="searchFunction()">
+    <div id="search-results" class="search-results"></div>
+</div>
+
+<div class="header">
+  <div class="dropdown">
+      <a href="#" class="dropbtn">LOGIN</a>
+      <div class="dropdown-content">
+          <form action="/login" method="post">
+              <label for="username">Username or email:</label>
+              <input type="text" id="username" name="username" required><br>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required><br>
+              <input type="submit" value="Log in">
+              <a href="#">Lost your password?</a>
+          </form>
+      </div>
+  </div>
+  <div class="dropdown">
+      <a href="#" class="dropbtn">REGISTER</a>
+      <div class="dropdown-content">
+          <form action="/register" method="post">
+              <label for="new-username">Username:</label>
+              <input type="text" id="new-username" name="new-username" required><br>
+              <label for="new-email">Email:</label>
+              <input type="email" id="new-email" name="new-email" required><br>
+              <label for="new-password">Password:</label>
+              <input type="password" id="new-password" name="new-password" required><br>
+              <input type="submit" value="Create Account">
+          </form>
+      </div>
+  </div>
+</div>
     </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <h1>მათემატიკური უნარების გაუმჯობესება</h1>
-            <p>ჩვენ ვეხმარებით მოსწავლეებს მათემატიკური პრობლემების გადაჭრაში</p>
-            <a href="#intro" class="btn">დაწყება</a>
-            <a href="about.html" class="btn">მეტის გაგება</a>
-        </section>
-
-        <!-- Introduction Section -->
-        <section id="intro">
-            <h2>კეთილი იყოს თქვენი მობრძანება  </h2>
-            <p>ჩვენი ვებგვერდი ეხმარება მოსწავლეებს უკეთ ისწავლონ მათემატიკა დეტალური შინაარსისა და ინტერაქტიული ფუნქციების მეშვეობით.</p>
-        </section>
-
-        <!-- Featured Topics Section -->
-        <section id="topics">
-            <h1>გამორჩეული თემები</h1>
-            <div class="topic">
-                <h3>Ალგებრა</h3>
-                <p>შეისწავლეთ ალგებრის საფუძვლები, განტოლებები და სხვა.</p>
-                <a href="algebra.html">მეტის გაგება</a>
-            </div>
-            <div class="topic">
-                <h3>გეომეტრია</h3>
-                <p>შეისწავლეთ  პლანიმეტრია და სტერეომეტრია.</p>
-                <a href="geometria.html">მეტის გაგება</a>
-            </div>
-            <div class="topic">
-                <h3>ტრიგონომეტრია</h3>
-                <p> შეისწავლეთ ტრიგონომეტრია რომელიც შეისწავლის სამკუთხედებს, თანაფარდობებს, ტრიგონომეტრიულ წესებს და სხვა.</p>
-                <a href="trigonometria.html">მეტის გაგება</a>
-            </div>
-        </section>
-
-        
-
-        <!-- How It Works Section -->
-        <section id="how-it-works">
-            <h1>Როგორ მუშაობს</h1>
-            <p></p>
-        </section>
-    </main>
-
-    <footer>
-        <nav>
-            <a href="index.html">მთავარი</a>
-            <a href="about.html">ჩვენს  შესახებ</a>
-            <a href="services.html">სერვისები</a>
-            <a href="news.html">სიახლე</a>
-            <a href="contact.html">კონტაქტი</a>
-        </nav>
-        <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+<section id="section1">
+     <div>
+    <div id="divid">ჩვენ გასწავლით თუ როგორ იყოთ  შემოქმედებითი</div>
+    <p>ჩვენი ერთ-ერთი უპირველესი მიზანია მოსწავლეებისთვის კრიტიკული აზროვნების და პრობლემის გადაჭრის უნარის განვითარება. ისინი სწავლობენ პრობლემების ანალიზს, დაყოფას მათ მცირე კომპონენტებად და მიმართავენ შესაბამის მათემატიკურ სტრატეგიებს გადაწყვეტილებების მისაღბად.</p>
+    <div class="container">
+        <button class="button" id="buttonid" onclick="location.href='services.html'">სერვისები</button>
+        <button class="button" id="buttonid1" onclick="location.href='contact.html'">კონტაქტი</button>
+    </div></div>
+    <img src="images/4542741.png">
+</section>
+<section id="section2">
+    <div id="divid1">ჩვენი უპირატესობები</div>
+    <div id="divid2">რატომ უნდა აირჩიოთ ჩვენი კურსები?</div>
+    <div class="divclass">
+    <div id="maindiv">
+        <img src="images/top-view-notebook-with-different-rulers-calculator_23-2148458893.png">
+        <div id="divid3">
+            <h4>ვიდეო სწავლება</h4>
+            <p>ჩვენი ვიდეო სწავლება უზრუნველყოფს უკეთეს სწავლას, ვიდრე დაფაზე სწავლება და სტრიმინგ ლექციები.</p>
         </div>
-        <p>&copy; 2024 Math Mastery. All rights reserved.</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+    <div id="maindiv">
+        <img src="images/top-view-notebook-with-different-rulers_23-2148458917.png">
+        <div id="divid3">
+            <h4>დახმარება მასწავლებლისგან</h4>
+            <p>თქვენ დახმარებას იღებთ მასწავლებლისგან. საბუნებისმეტყველო საგნებში, თქვენ ასევე მიიღებთ ნებაყოფლობით დახმარებას საშინაო დავალების შესრულებაში კვირაში რამდენიმე დღის განმავლობაში.</p>
+        </div>
+    </div>
+    <div id="maindiv">
+        <img src="images/cartoon-math-elements-background_23-2148157890.jpg">
+        <div id="divid3">
+            <h4>საგამოცდო ტრენინგი</h4>
+            <p>ჩვენი გამოცდილი გამომცდელები დაგეხმარებათ წერილობით წარდგენაში. თქვენ ასევე იღებთ ზეპირ ტესტს პირადი გამოხმაურებითა და ხელმძღვანელობით.</p>
+        </div>
+    </div>
+</div>
+</section>
+    <footer></footer>
 </body>
 </html>
