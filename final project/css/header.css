@@ -19,7 +19,7 @@ header nav a {
   color: black;
 }
 header nav a:hover {
-  color: #61aabe;
+  color: #00c9d3;
 }
 header img {
   display: flex;
@@ -36,7 +36,7 @@ body.services nav a[href="services.html"],
 body.news nav a[href="news.html"],
 body.about nav a[href="about.html"],
 body.contact nav a[href="contact.html"] {
-  color: #61aabe;
+  color: #00c9d3;
 }
 
 .search-container {
@@ -50,7 +50,7 @@ body.contact nav a[href="contact.html"] {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #7abdcf;
+  border: 2px solid #AFEEEE;
   border-radius: 4px;
 }
 
@@ -58,7 +58,7 @@ body.contact nav a[href="contact.html"] {
   position: absolute;
   top: 40px;
   width: 100%;
-  border: 2px solid #7abdcf;
+  border: 2px solid #AFEEEE;
   border-top: none;
   background-color: white;
   border-radius: 0 0 4px 4px;
@@ -111,7 +111,7 @@ body.contact nav a[href="contact.html"] {
   display: none;
   position: absolute;
   background-color: white;
-  color: #61aabe;
+  color: #00c9d3;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -134,7 +134,7 @@ body.contact nav a[href="contact.html"] {
 }
 
 .dropdown-content input[type=submit] {
-  background-color: #61aabe;
+  background-color: #00c9d3;
   color: white;
   border: none;
   padding: 10px;
@@ -147,7 +147,7 @@ body.contact nav a[href="contact.html"] {
 
 .dropdown-content a {
   text-decoration: none;
-  color: #61aabe;
+  color: #00c9d3;
   margin-top: 10px;
 }
 
