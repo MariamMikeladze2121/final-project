@@ -1,4 +1,7 @@
 @import "variables";
+main{
+  margin-top: 200px;
+}
  #section1{ 
   margin-top: 100px;
   margin-bottom: 100px;
@@ -198,6 +201,7 @@ display: flex;
 .container {
   text-align: center;
   margin: 20px;
+  margin-left: 80px;
 }
 .video-grid {
   display: flex;
@@ -205,6 +209,7 @@ display: flex;
   gap: 10px;
   flex-wrap: wrap;
   margin-left: -50px;
+  
 }
 iframe {
   width: 100%;
@@ -213,7 +218,7 @@ iframe {
   margin-left: 50px;
 }
 #video-row{
-  margin-top: -50px;
+  
   margin-left: 5px;
   a:hover{
     background-color: rgb(189, 189, 189);

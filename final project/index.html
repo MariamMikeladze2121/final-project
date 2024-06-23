@@ -14,57 +14,58 @@
 
 </head>
 <body>
-    <header>
-  <nav>
-    <a href="#" class="active" >მთავარი</a>
-    <a href="services.html">სერვისები</a>
-    <a href="news.html">სიახლეები</a>
-    <a href="aboutus.html">ჩვენს შესახებ</a>
-    <a href="contact.html">კონტაქტი</a>
-  </nav>
-  <img src="images/image (1).png">
-  <div class="search-container">
-    <input type="text" id="search-input" placeholder="Search..." onkeyup="searchFunction()">
-    <div id="search-results" class="search-results"></div>
-</div>
+    <header id="header">
+        <nav class="nav">
+            <a href="#" class="active">მთავარი</a>
+            <a href="services.html">სერვისები</a>
+            <a href="news.html">სიახლეები</a>
+            <a href="aboutus.html">ჩვენს შესახებ</a>
+            <a href="contact.html">კონტაქტი</a>
+        </nav>
+        <img class="logo" src="images/image (1).png" alt="Logo">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search..." onkeyup="searchFunction()">
+            <div id="search-results" class="search-results"></div>
+        </div>
 
-<div class="header">
-  <div class="dropdown">
-      <a href="#" class="dropbtn">LOGIN</a>
-      <div class="dropdown-content">
-          <form action="/login" method="post">
-              <label for="username">Username or email:</label>
-              <input type="text" id="username" name="username" required><br>
-              <label for="password">Password:</label>
-              <input type="password" id="password" name="password" required><br>
-              <input type="submit" value="Log in">
-              <a href="#">Lost your password?</a>
-          </form>
-      </div>
-  </div>
-  <div class="dropdown">
-      <a href="#" class="dropbtn">REGISTER</a>
-      <div class="dropdown-content">
-          <form action="/register" method="post">
-              <label for="new-username">Username:</label>
-              <input type="text" id="new-username" name="new-username" required><br>
-              <label for="new-email">Email:</label>
-              <input type="email" id="new-email" name="new-email" required><br>
-              <label for="new-password">Password:</label>
-              <input type="password" id="new-password" name="new-password" required><br>
-              <input type="submit" value="Create Account">
-          </form>
-      </div>
-  </div>
-</div>
+        <div class="header">
+            <div class="dropdown">
+                <a href="#" class="dropbtn">LOGIN</a>
+                <div class="dropdown-content">
+                    <form action="/login" method="post">
+                        <label for="username">Username or email:</label>
+                        <input type="text" id="username" name="username" required><br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required><br>
+                        <input type="submit" value="Log in">
+                        <a href="#">Lost your password?</a>
+                    </form>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">REGISTER</a>
+                <div class="dropdown-content">
+                    <form action="/register" method="post">
+                        <label for="new-username">Username:</label>
+                        <input type="text" id="new-username" name="new-username" required><br>
+                        <label for="new-email">Email:</label>
+                        <input type="email" id="new-email" name="new-email" required><br>
+                        <label for="new-password">Password:</label>
+                        <input type="password" id="new-password" name="new-password" required><br>
+                        <input type="submit" value="Create Account">
+                    </form>
+                </div>
+            </div>
+        </div>
     </header>
+    <main>
 <section id="section1">
      <div>
     <div id="divid">ჩვენ გასწავლით თუ როგორ იყოთ  შემოქმედებითი</div>
     <p>ჩვენი ერთ-ერთი უპირველესი მიზანია მოსწავლეებისთვის კრიტიკული აზროვნების და პრობლემის გადაჭრის უნარის განვითარება. ისინი სწავლობენ პრობლემების ანალიზს, დაყოფას მათ მცირე კომპონენტებად და მიმართავენ შესაბამის მათემატიკურ სტრატეგიებს გადაწყვეტილებების მისაღბად.</p>
     <div class="container">
         <button class="button" id="buttonid" onclick="location.href='services.html'">სერვისები</button>
-        <button class="button" id="buttonid1" onclick="location.href='contact.html'">კონტაქტი</button>
+        <button class="button" id="buttonid1" onclick="location.href='contact.html'" style="margin-left: 20px;">კონტაქტი</button>
     </div></div>
     <img src="images/4542741.png">
 </section>
@@ -163,6 +164,20 @@
         </div>
     </div>
 </section>
-    <footer></footer>
+</main>
+    <footer>
+        <div id="textdiv">დაგვიკავშირდით</div>
+        <img src="images/image (2).png">
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

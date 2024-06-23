@@ -1,3 +1,7 @@
+main {
+  margin-top: 200px;
+}
+
 #section1 {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -199,6 +203,7 @@
 .container {
   text-align: center;
   margin: 20px;
+  margin-left: 80px;
 }
 
 .video-grid {
@@ -217,7 +222,6 @@ iframe {
 }
 
 #video-row {
-  margin-top: -50px;
   margin-left: 5px;
 }
 #video-row a:hover {

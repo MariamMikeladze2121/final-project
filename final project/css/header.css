@@ -1,9 +1,41 @@
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; /* Ensure the header has a background */
+  transition: all 0.3s ease;
+}
+
+header.scrolled {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow when scrolled */
+}
+
+header .logo, header .nav a {
+  transition: all 0.3s ease;
+}
+
+header.scrolled .logo {
+  transform: scale(0.8); /* Scale logo */
+}
+
+header.scrolled .nav a {
+  transform: scale(0.9); /* Scale nav links */
+}
+
+header {
   background-color: white;
   display: flex;
   font-size: medium;
   height: 80px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; /* Ensure the header has a background */
 }
 header nav {
   display: flex;
